@@ -10,3 +10,4 @@ Minecatl1/kittytoy
 Minecatl1/six-cats-under
 Minecatl1/obgoose
 Minecatl1/frickbears3
+Minecatl1/prism-mc-launcher
