@@ -6,6 +6,8 @@
 # Change this path to the absolute directory where your games live
 GAMES_ROOT_DIR="./Games"
 
+curl -L -O https://github.com/Minecatl1/Gami-launcher/raw/refs/heads/main/games_list.txt
+
 LIST_FILE="games_list.txt"
 INSTALLED_FILE="installed_games.txt"
 
@@ -67,7 +69,7 @@ while true; do
         URL="https://github.com/${REPO_PATH}/releases/download/V3.0.0/${SELECTED_GAME}.tar.xz"
         OUTPUT_FILE="${SELECTED_GAME}.tar.xz"
         TARGET_FOLDER="${GAMES_ROOT_DIR}/${SELECTED_GAME}"
-	echo $URL
+		echo $URL
         # Fetch archive asset with active processing pipeline for Zenity progress metric tracking
         curl -L -O "$URL" 2>&1 | \
         stdbuf -o0 tr '\r' '\n' | \
